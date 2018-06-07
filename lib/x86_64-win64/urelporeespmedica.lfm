@@ -1,0 +1,13 @@
+object fromerrado: Tfromerrado
+  Left = 758
+  Height = 54
+  Top = 606
+  Width = 321
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Atendimentos por Esp.Médica'
+  Color = clWhite
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+end

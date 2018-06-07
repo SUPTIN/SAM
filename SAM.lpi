@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="SAM"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="8">
+      <Item1>
+        <PackageName Value="frce"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="MemDSLaz"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="TAChartLazarusPkg"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LazControls"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="lazreport"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="FCL"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="zcomponent"/>
+      </Item7>
+      <Item8>
+        <PackageName Value="LCL"/>
+      </Item8>
+    </RequiredPackages>
+    <Units Count="15">
+      <Unit0>
+        <Filename Value="SAM.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uprocedimentos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormProcedimentos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uProcedimentos"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="uespecialidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormEspecialidades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEspecialidades"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="utipoatend.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormTipoAtend"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uTipoAtend"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="umedicos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMedicos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMedicos"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uriscos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRiscos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRiscos"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uatendimentos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtend"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtendimentos"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="ugestantes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormGestantes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uGestantes"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="urelatorios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRelatorios"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRelatorios"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="uatenddodia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtendDoDia"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtendDoDia"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="uatendpormedico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtendPorMedico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtendPorMedico"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="usobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="formSobre"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSobre"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="urelporespmedica.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormComErro"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="uatenespmed.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtenEspMed"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtenEspMed"/>
+      </Unit14>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="SAM"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

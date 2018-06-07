@@ -1,0 +1,85 @@
+object FormRelatorios: TFormRelatorios
+  Left = 307
+  Height = 489
+  Top = 122
+  Width = 331
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Relatórios'
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+  object ZCRelatorios: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    Connected = True
+    Port = 0
+    Database = 'D:\Usuários\ewertonlyrio\Desktop\SAM\Dados\BDAmbulatorioMulher.db'
+    Protocol = 'sqlite-3'
+    left = 152
+    top = 8
+  end
+  object ReportAteEspMed: TfrReport
+    Dataset = DSRelAteEspMed
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    left = 40
+    top = 81
+  end
+  object DSRelAteEspMed: TfrDBDataSet
+    DataSet = ROQueryAteEspMed
+    OnCheckEOF = DSRelAteEspMedCheckEOF
+    left = 40
+    top = 144
+  end
+  object ROQueryAteEspMed: TZReadOnlyQuery
+    Connection = ZCRelatorios
+    Active = True
+    SQL.Strings = (
+      'select Especialidades.DescricaoEspecialidade, count(Atendimentos.EspMedica)  as total'
+      'from Atendimentos, Especialidades '
+      'where Especialidades.DescricaoEspecialidade == Atendimentos.EspMedica'
+      'group by Especialidades.DescricaoEspecialidade;'
+    )
+    Params = <>
+    left = 48
+    top = 208
+  end
+  object ReportAtendDia: TfrReport
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    left = 440
+    top = 65440
+  end
+  object ROQueryAte: TZReadOnlyQuery
+    Connection = ZCRelatorios
+    Active = True
+    SQL.Strings = (
+      'Select * from atendimentos;'
+    )
+    Params = <>
+    left = 256
+    top = 216
+  end
+  object ReportAte: TfrReport
+    Dataset = DSAte
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    left = 259
+    top = 96
+  end
+  object DSAte: TfrDBDataSet
+    DataSet = ROQueryAte
+    left = 259
+    top = 160
+  end
+end

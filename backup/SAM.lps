@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="27">
+      <Unit0>
+        <Filename Value="SAM.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="13"/>
+        <CursorPos X="59" Y="32"/>
+        <UsageCount Value="112"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="66"/>
+        <CursorPos Y="132"/>
+        <UsageCount Value="112"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uprocedimentos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormProcedimentos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uProcedimentos"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="23" Y="44"/>
+        <UsageCount Value="112"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="uespecialidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormEspecialidades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEspecialidades"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <UsageCount Value="112"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="utipoatend.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormTipoAtend"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uTipoAtend"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="112"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="umedicos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMedicos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMedicos"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="32"/>
+        <CursorPos X="3" Y="49"/>
+        <UsageCount Value="112"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uriscos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRiscos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRiscos"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="3" Y="43"/>
+        <UsageCount Value="112"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uatendimentos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtend"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtendimentos"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos X="27" Y="60"/>
+        <UsageCount Value="112"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="ugestantes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormGestantes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uGestantes"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="217"/>
+        <CursorPos X="7" Y="227"/>
+        <UsageCount Value="112"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="urelatorios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRelatorios"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRelatorios"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="30"/>
+        <CursorPos X="3" Y="48"/>
+        <UsageCount Value="86"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="uatenddodia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtendDoDia"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtendDoDia"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="91" Y="55"/>
+        <UsageCount Value="81"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="uatendpormedico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtendPorMedico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtendPorMedico"/>
+        <TopLine Value="60"/>
+        <CursorPos X="33" Y="65"/>
+        <UsageCount Value="77"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="usobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="formSobre"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSobre"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="44"/>
+        <CursorPos Y="54"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="urelporespmedica.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormComErro"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="67"/>
+        <CursorPos X="3" Y="61"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="uatenespmed.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAtenEspMed"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAtenEspMed"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="136"/>
+        <CursorPos X="72" Y="144"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1002"/>
+        <CursorPos Y="1019"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\lcl\groupededit.pp"/>
+        <UnitName Value="GroupedEdit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="928"/>
+        <CursorPos Y="942"/>
+        <UsageCount Value="9"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\packager\zeosdbo-7.2.4-stable\src\component\ZAbstractRODataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2487"/>
+        <CursorPos X="54" Y="2508"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2851"/>
+        <CursorPos Y="2864"/>
+        <UsageCount Value="4"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\lazarus\packager\zeosdbo-7.2.4-stable\src\component\ZSqlUpdate.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="806"/>
+        <CursorPos Y="819"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\packager\zeosdbo-7.2.4-stable\src\dbc\ZDbcSqLiteUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="232"/>
+        <CursorPos Y="232"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_class.pas"/>
+        <UnitName Value="LR_Class"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11781"/>
+        <CursorPos Y="11795"/>
+        <UsageCount Value="11"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\lazarus\packager\zeosdbo-7.2.4-stable\src\dbc\ZDbcSqLiteStatement.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="147"/>
+        <CursorPos Y="161"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\components\lazutils\lazutf8classes.pas"/>
+        <UnitName Value="LazUTF8Classes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="141"/>
+        <CursorPos Y="151"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\lazarus\packager\zeosdbo-7.2.4-stable\src\dbc\ZDbcUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="366"/>
+        <CursorPos Y="377"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\lazarus\lcl\dbgrids.pas"/>
+        <UnitName Value="DBGrids"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="4101"/>
+        <CursorPos Y="4109"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\lazarus\components\tachart\tagraph.pas"/>
+        <UnitName Value="TAGraph"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="837"/>
+        <CursorPos Y="848"/>
+        <UsageCount Value="12"/>
+      </Unit26>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="urelporespmedica.pas"/>
+        <Caret Line="113" Column="21" TopLine="109"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="63" Column="24" TopLine="55"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="89" Column="79" TopLine="82"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="117" Column="88" TopLine="108"/>
+      </Position4>
+      <Position5>
+        <Filename Value="urelporespmedica.pas"/>
+        <Caret Line="120" Column="79" TopLine="113"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="117" Column="51" TopLine="108"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="121" Column="7" TopLine="108"/>
+      </Position7>
+      <Position8>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="122" Column="13" TopLine="111"/>
+      </Position8>
+      <Position9>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="123" TopLine="103"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="132" Column="3" TopLine="121"/>
+      </Position10>
+      <Position11>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="153" TopLine="147"/>
+      </Position11>
+      <Position12>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="71" Column="23" TopLine="68"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="70" Column="6" TopLine="68"/>
+      </Position13>
+      <Position14>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="135" Column="67" TopLine="70"/>
+      </Position14>
+      <Position15>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="92" Column="3" TopLine="98"/>
+      </Position15>
+      <Position16>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="134" Column="3" TopLine="123"/>
+      </Position16>
+      <Position17>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="136" Column="28" TopLine="128"/>
+      </Position17>
+      <Position18>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="132" Column="22" TopLine="121"/>
+      </Position18>
+      <Position19>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="137" Column="6" TopLine="127"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="102" Column="19" TopLine="94"/>
+      </Position20>
+      <Position21>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="134" Column="5" TopLine="119"/>
+      </Position21>
+      <Position22>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="137" Column="26" TopLine="126"/>
+      </Position22>
+      <Position23>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="156" Column="29" TopLine="143"/>
+      </Position23>
+      <Position24>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="121" Column="25" TopLine="113"/>
+      </Position24>
+      <Position25>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="131" Column="4" TopLine="124"/>
+      </Position25>
+      <Position26>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="138" Column="25" TopLine="127"/>
+      </Position26>
+      <Position27>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="139" Column="47" TopLine="121"/>
+      </Position27>
+      <Position28>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="143" Column="31" TopLine="131"/>
+      </Position28>
+      <Position29>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="145" Column="51" TopLine="131"/>
+      </Position29>
+      <Position30>
+        <Filename Value="uatenespmed.pas"/>
+        <Caret Line="146" Column="40" TopLine="136"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

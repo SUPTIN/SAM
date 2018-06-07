@@ -1,0 +1,148 @@
+object FormProcedimentos: TFormProcedimentos
+  Left = 435
+  Height = 240
+  Top = 203
+  Width = 588
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Procedimentos'
+  ClientHeight = 240
+  ClientWidth = 588
+  Color = clWhite
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+  object Label1: TLabel
+    Left = 56
+    Height = 15
+    Top = 40
+    Width = 86
+    Caption = 'Procedimentos: '
+    ParentColor = False
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 176
+    Height = 25
+    Top = 80
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DSProc
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 128
+    Top = 112
+    Width = 588
+    Color = clWindow
+    Columns = <    
+      item
+        Alignment = taCenter
+        Title.Caption = 'Código'
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Procedimento'
+        Width = 355
+        FieldName = 'DescricaProcedimento'
+      end>
+    DataSource = DSProc
+    TabOrder = 1
+  end
+  object DBEdit1: TDBEdit
+    Left = 155
+    Height = 23
+    Top = 40
+    Width = 279
+    DataField = 'DescricaProcedimento'
+    DataSource = DSProc
+    CharCase = ecNormal
+    MaxLength = 1020
+    TabOrder = 2
+  end
+  object ZUpSQLProc: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM Procedimentos'
+      'WHERE'
+      '  ((Procedimentos.id IS NULL AND :OLD_id IS NULL) OR (Procedimentos.id = :OLD_id))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO Procedimentos'
+      '  (id, DescricaProcedimento)'
+      'VALUES'
+      '  (:id, :DescricaProcedimento)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE Procedimentos SET'
+      '  id = :id,'
+      '  DescricaProcedimento = :DescricaProcedimento'
+      'WHERE'
+      '  ((Procedimentos.id IS NULL AND :OLD_id IS NULL) OR (Procedimentos.id = :OLD_id))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 496
+    top = 96
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DescricaProcedimento'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id'
+        ParamType = ptUnknown
+      end>
+  end
+  object ZQueryProc: TZQuery
+    Connection = FormPrincipal.ZConnection1
+    UpdateObject = ZUpSQLProc
+    AfterPost = ZQueryProcAfterPost
+    Active = True
+    SQL.Strings = (
+      'select * from Procedimentos;'
+    )
+    Params = <>
+    left = 496
+    top = 32
+    object ZQueryProcid: TLargeintField
+      DisplayLabel = 'Código'
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQueryProcDescricaProcedimento: TStringField
+      DisplayLabel = 'Procedimento'
+      FieldKind = fkData
+      FieldName = 'DescricaProcedimento'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1020
+    end
+  end
+  object DSProc: TDataSource
+    DataSet = ZQueryProc
+    left = 496
+    top = 160
+  end
+end

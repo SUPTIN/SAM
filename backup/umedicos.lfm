@@ -1,0 +1,149 @@
+object FormMedicos: TFormMedicos
+  Left = 397
+  Height = 248
+  Top = 247
+  Width = 583
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Médicos'
+  ClientHeight = 248
+  ClientWidth = 583
+  Color = clWhite
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 132
+    Top = 112
+    Width = 584
+    Color = clWindow
+    Columns = <    
+      item
+        Alignment = taCenter
+        Title.Caption = 'Código'
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Médico'
+        Width = 355
+        FieldName = 'nomeMedico'
+      end>
+    DataSource = DSMedicos
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 192
+    Height = 25
+    Top = 72
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DSMedicos
+    Options = []
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 83
+    Height = 15
+    Top = 22
+    Width = 51
+    Caption = 'Médicos: '
+    ParentColor = False
+  end
+  object DBEdit1: TDBEdit
+    Left = 192
+    Height = 23
+    Top = 22
+    Width = 297
+    DataField = 'nomeMedico'
+    DataSource = DSMedicos
+    CharCase = ecNormal
+    MaxLength = 1020
+    TabOrder = 2
+  end
+  object DSMedicos: TDataSource
+    DataSet = ZQueryMedicos
+    left = 528
+    top = 180
+  end
+  object ZQueryMedicos: TZQuery
+    Connection = FormPrincipal.ZConnection1
+    UpdateObject = ZUpSQLMedicos
+    AfterPost = ZQueryMedicosAfterPost
+    Active = True
+    SQL.Strings = (
+      'select * from Medicos;'
+    )
+    Params = <>
+    left = 528
+    top = 56
+    object ZQueryMedicosid: TLargeintField
+      DisplayLabel = 'Código'
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQueryMedicosnomeMedico: TStringField
+      DisplayLabel = 'Médico'
+      FieldKind = fkData
+      FieldName = 'nomeMedico'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1020
+    end
+  end
+  object ZUpSQLMedicos: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM Medicos'
+      'WHERE'
+      '  ((Medicos.id IS NULL AND :OLD_id IS NULL) OR (Medicos.id = :OLD_id))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO Medicos'
+      '  (id, nomeMedico)'
+      'VALUES'
+      '  (:id, :nomeMedico)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE Medicos SET'
+      '  id = :id,'
+      '  nomeMedico = :nomeMedico'
+      'WHERE'
+      '  ((Medicos.id IS NULL AND :OLD_id IS NULL) OR (Medicos.id = :OLD_id))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 528
+    top = 128
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'nomeMedico'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id'
+        ParamType = ptUnknown
+      end>
+  end
+end

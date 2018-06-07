@@ -1,0 +1,148 @@
+object FormRiscos: TFormRiscos
+  Left = 432
+  Height = 240
+  Top = 196
+  Width = 584
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Riscos'
+  ClientHeight = 240
+  ClientWidth = 584
+  Color = clWhite
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+  object DBNavigator1: TDBNavigator
+    Left = 196
+    Height = 25
+    Top = 88
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DSRiscos
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 120
+    Top = 120
+    Width = 584
+    Color = clWindow
+    Columns = <    
+      item
+        Alignment = taCenter
+        Title.Caption = 'Código'
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Risco'
+        Width = 355
+        FieldName = 'DescricaoRisco'
+      end>
+    DataSource = DSRiscos
+    TabOrder = 1
+  end
+  object DBEdit1: TDBEdit
+    Left = 216
+    Height = 23
+    Top = 32
+    Width = 256
+    DataField = 'DescricaoRisco'
+    DataSource = DSRiscos
+    CharCase = ecNormal
+    MaxLength = 620
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 96
+    Height = 15
+    Top = 32
+    Width = 39
+    Caption = 'Riscos: '
+    ParentColor = False
+  end
+  object ZQueryRiscos: TZQuery
+    Connection = FormPrincipal.ZConnection1
+    UpdateObject = ZUpSQLRiscos
+    AfterPost = ZQueryRiscosAfterPost
+    Active = True
+    SQL.Strings = (
+      'select * from Riscos;'
+    )
+    Params = <>
+    left = 504
+    top = 8
+    object ZQueryRiscosid: TLargeintField
+      DisplayLabel = 'Código'
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQueryRiscosDescricaoRisco: TStringField
+      DisplayLabel = 'Risco'
+      FieldKind = fkData
+      FieldName = 'DescricaoRisco'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 620
+    end
+  end
+  object ZUpSQLRiscos: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM Riscos'
+      'WHERE'
+      '  ((Riscos.id IS NULL AND :OLD_id IS NULL) OR (Riscos.id = :OLD_id))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO Riscos'
+      '  (id, DescricaoRisco)'
+      'VALUES'
+      '  (:id, :DescricaoRisco)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE Riscos SET'
+      '  id = :id,'
+      '  DescricaoRisco = :DescricaoRisco'
+      'WHERE'
+      '  ((Riscos.id IS NULL AND :OLD_id IS NULL) OR (Riscos.id = :OLD_id))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 504
+    top = 72
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DescricaoRisco'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id'
+        ParamType = ptUnknown
+      end>
+  end
+  object DSRiscos: TDataSource
+    DataSet = ZQueryRiscos
+    left = 508
+    top = 148
+  end
+end
